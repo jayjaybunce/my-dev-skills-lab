@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 200px auto;
+}
+
+#wrapper{
+    
+    grid-row: 2/3;
+    padding: 0px 10px 10px 10px;
+    grid-column: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+}
+
+#header{
+    grid-column: 1/4;
+    background-color: #9EC285;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+}
+ul{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 0;
+}
+li{
+    margin-bottom: 15px;
+    display: inline-block;
+    font-size: 15px;
+    
+    padding-left: 25px;
+    list-style: none;
+    display: grid;
+    grid-column: 1/3;
+}
+
+#taskToAdd{
+    height: 20px;
+    grid-column: 1/3;
+    padding: 5px;
+    border: 3px solid #9EC285;
+    font-size: 15px;
+}
+
+#addButton{
+    height: 36px;
+    font-weight: bold;
+    grid-column: 3/4;
+    border: 3px solid #9EC285;
+    
+}
+
+.deleteButton{
+    grid-column: 1/2;
+    padding:0px 0px 0px 0px;
+    margin-bottom: -17px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    float: left;
+    color: white;
+    background-color: red;
+}
+
