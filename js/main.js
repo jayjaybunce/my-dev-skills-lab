@@ -12,6 +12,7 @@ $buttonEl.on('click',function(){
     $ul.append($newSkill)
     $('.deleteButton').on('click',function(){
         $(this).next('li').fadeOut(500,function(){
+            $(this).next('br').remove()
             $(this.remove())
         })
         $(this).fadeOut(500,function(){
@@ -23,6 +24,7 @@ $buttonEl.on('click',function(){
 
 $('.deleteButton').on('click',function(){
     $(this).next('li').fadeOut(500,function(){
+        $(this).next('br').remove()
         $(this.remove())
     })
     $(this).fadeOut(500,function(){
